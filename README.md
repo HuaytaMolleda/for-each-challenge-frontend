@@ -1,4 +1,4 @@
-# For-Each Challengue
+# For-Each Challenge
 
 ### Requirements
 
