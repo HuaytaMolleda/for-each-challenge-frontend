@@ -6,7 +6,7 @@ import {
     Select,
     MenuItem,
     InputLabel,
-    Button, FormHelperText,
+    Button, FormHelperText, Typography,
 } from "@material-ui/core";
 import {createStyles} from "./Styles";
 import {buildUrl, verifyInputLength} from "../../../../helpers";
@@ -131,6 +131,7 @@ export default function Create(){
     console.log(errorValidator)
     return(
         <Grid  className={classes.root}  item xs={12} container direction={"column"} justify={"center"} >
+            <Typography align={"center"} variant={"h5"}>Formulario</Typography>
             <TextField
                 error={!formValidators.startPoint && errorValidator}
                 helperText={!formValidators.startPoint && errorValidator ? "Dato obligatorio" : null }
